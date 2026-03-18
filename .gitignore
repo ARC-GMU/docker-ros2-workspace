@@ -17,4 +17,6 @@ workspace/build/
 workspace/install/
 workspace/log/
 
+# Git subrepo/submodules
+/workspace/src/*
 !workspace/src/*.md
