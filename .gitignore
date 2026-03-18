@@ -16,3 +16,5 @@ __pycache__/
 workspace/build/
 workspace/install/
 workspace/log/
+
+!workspace/src/*.md
