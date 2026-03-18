@@ -1,6 +1,7 @@
 # ROS 2 Docker Workspace
 
-This repository holds the ROS development environment for the Raytheon Drone Competition
+This repository holds the ROS development environment for the Raytheon Drone Competition.
+A ROS 2 Humble enviroment is preinstalled and sourced in this Docker image.
 
 ## Getting Started
 
