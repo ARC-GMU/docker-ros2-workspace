@@ -52,4 +52,13 @@ ssh rdc@localhost -p 2222
 ```
 
 Connect and login using the password in the Dockerfile (default: `rdc`).
-The ~/workspace/ directory is mapped from the host directory.
+The `~/workspace/` directory is mapped from the host directory.
+
+### Stopping Container
+> [!WARNING]
+> By default, the container is automatically deleted when stopped to keep the container nice and neat.
+> To ensure that your work is saved, store all your work in the mounted workspace at `~/workspace/`.
+
+```sh
+docker stop rdc-ros2
+```
