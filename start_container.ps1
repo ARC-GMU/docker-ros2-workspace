@@ -1,0 +1,1 @@
+docker run --rm -d --user "$(wsl id -u):$(wsl id -g)" --name rdc-ros2 -p 2222:22 -v "${PWD}\workspace:/home/rdc/workspace" rdc-ros2

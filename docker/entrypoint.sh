@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
+# FIXME: Providing abitrary uid and gid cause sshd to fail to start
 if [ "$1" = "sshd" ] || [ "$#" -eq 0 ]; then
     ssh-keygen -A
     if [ "$(id -u)" -eq 0 ]; then

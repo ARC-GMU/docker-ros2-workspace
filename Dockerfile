@@ -49,7 +49,8 @@ RUN sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin no/' /etc/ssh/sshd_config &&
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
-RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /home/$USERNAME/.bashrc
+RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /home/$USERNAME/.bashrc \
+    && echo "cd /home/$USERNAME/workspace" >> /home/$USERNAME/.bashrc
 ENV SHELL=/bin/bash
 
 # Create and own the ROS workspace before switching user
