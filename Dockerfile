@@ -65,7 +65,7 @@ COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # Set the default user. Omit if you want to keep the default as root.
-# USER $USERNAME
+USER $USERNAME
 
 WORKDIR /home/$USERNAME/workspace
 
