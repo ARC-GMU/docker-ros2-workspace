@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -e
 
 # FIXME: Providing abitrary uid and gid cause sshd to fail to start

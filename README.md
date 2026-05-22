@@ -17,7 +17,7 @@ Before you start, install the following programs on your computer:
 From this directory, build the image (this will take some time):
 
 ```sh
-docker build -t rdc-ros2 .
+docker build -t arc-ros2:jazzy .
 ```
 
 Run the image:
@@ -48,10 +48,10 @@ With the Docker image built, you you can connect to the development environment 
 
 Open a terminal and enter
 ```sh
-ssh rdc@localhost -p 2222
+ssh arc@localhost -p 2222
 ```
 
-Connect and login using the password in the Dockerfile (default: `rdc`).
+Connect and login using the password in the Dockerfile (default: `123`).
 The `~/workspace/` directory is mapped from the host directory.
 
 ### Stopping Container
@@ -60,5 +60,5 @@ The `~/workspace/` directory is mapped from the host directory.
 > To ensure that your work is saved, store all your work in the mounted workspace at `~/workspace/`.
 
 ```sh
-docker stop rdc-ros2
+docker stop arc-ros2
 ```
