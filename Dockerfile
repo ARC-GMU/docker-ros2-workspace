@@ -11,6 +11,15 @@ ENV DEBIAN_FRONTEND=noninteractive
 SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update && apt-get install -y \
+    curl \
+    locales \
+    nano \
+    python3 \
+    python3-colcon-common-extensions \
+    python3-pip \
+    python3-rosdep \
+    python3-venv \
+    software-properties-common \
     openssh-server \
     sudo \
     && mkdir -p /run/sshd \
